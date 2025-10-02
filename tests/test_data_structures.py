@@ -47,3 +47,7 @@ class MyTestCase(unittest.TestCase):
 """,
             text_capture.getvalue(),
         )
+
+
+if __name__ == "__main__":
+    unittest.main()
