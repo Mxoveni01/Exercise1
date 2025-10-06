@@ -58,5 +58,31 @@ class TestHidden(unittest.TestCase):
         self.assertTrue(are_anagrams("a gentleman","elegant man"))
         self.assertFalse(are_anagrams("rub","bake"))
 
+    def test_n_0(self):
+            # Test for n = 0 (base case)
+            self.assertEqual(pascal_triangle(0), [1])
+
+    def test_n_3(self):
+        # Test for n = 3
+        self.assertEqual(pascal_triangle(3), [1, 3, 3, 1])
+
+    def test_n_5(self):
+        # Test for n = 5
+        self.assertEqual(pascal_triangle(5), [1, 5, 10, 10, 5, 1])
+
+    def test_n_negative(self):
+        # Test for a negative value of n
+        with self.assertRaises(ValueError):
+            pascal_triangle(-1)
+
+    def test_n_large(self):
+        # Test for a large value of n
+        self.assertEqual(pascal_triangle(20), [1, 20, 190, 1140, 4845, 15504, 38760, 77520, 125970, 167960, 184756, 167960, 125970, 77520, 38760, 15504, 4845, 1140, 190, 20, 1])
+
+
+if __name__ == '__main__':
+    unittest.main()
+
+
 if __name__ == "__main__":
     unittest.main()
