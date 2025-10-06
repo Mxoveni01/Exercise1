@@ -82,6 +82,6 @@ run_tests() {
 }
 
 
-run_tests test_data_structures.py || exit 1
-run_tests test_exercise_2.py || exit 1
-run_tests test_hidden.py || exit 1
+run_tests tests/test_data_structures.py || exit 1
+run_tests tests/test_exercise_2.py || exit 1
+run_tests tests/test_hidden.py || exit 1
