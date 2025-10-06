@@ -45,7 +45,7 @@ run_tests() {
   echo "🔍 Running tests from: $test_file"
 
   # Run unittest and capture output
-  TEST_OUTPUT=$(python -m unittest "$test_file" 2>&1)
+  TEST_OUTPUT=$(python3 -m unittest "$test_file" 2>&1)
   echo "$TEST_OUTPUT"
 
   # Extract tests run
