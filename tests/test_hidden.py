@@ -41,12 +41,22 @@ class TestHidden(unittest.TestCase):
         self.assertTrue(is_palindrome("civic"), "Expected true when civic is entered")
         self.assertTrue(is_palindrome("civic"), "Expected true when civic is entered")
         self.assertTrue(is_palindrome("civic"), "Expected true when civic is entered")
-        
+
         # False cases
         self.assertTrue(is_palindrome("civic"), "Expected true when civic is entered")
         self.assertTrue(is_palindrome("civic"), "Expected true when civic is entered")
         self.assertTrue(is_palindrome("civic"), "Expected true when civic is entered")
-    
+
     def test_factorial(self):
-        self.assertEquals
-        
+        self.assertEquals(factorial(5), 120)
+        self.assertEquals(factorial(0), 1)
+        with self.assertRaises(ValueError, msg="negative values are not allowed"):
+            factorial(-1)
+
+    def test_anagrams(self):
+        self.assertTrue(are_anagrams("listen","silent"))
+        self.assertTrue(are_anagrams("a gentleman","elegant man"))
+        self.assertFalse(are_anagrams("rub","bake"))
+
+if __name__ == "__main__":
+    unittest.main()

@@ -15,7 +15,7 @@
 
 ## Exercise 2
 
-For this exercise create a file named `test_exercise_2` where you'll be writing your tests.
+For this exercise create a file named `test_exercise_2.py` where you'll be writing your tests.
 
 ### 1. FIZZBUZZ
 - Write a function named `fizz_buzz` that returns:
@@ -38,3 +38,7 @@ For this exercise create a file named `test_exercise_2` where you'll be writing 
 - Anagrams are words or phrases that can be rearranged to make an entirely different word or phrase
 
 - Write a function `are_anagrams(str1, str2)` that checks if given strings are anagrams.
+
+# Important
+
+To get your results run the command `bash .scripts/test_script.bash`

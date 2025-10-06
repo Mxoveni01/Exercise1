@@ -1,0 +1,26 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        ".github": true,
+        ".scripts": true,
+        "**/test_hidden.py": true,
+        "**/.DS_Store": true,
+        "**/.hg": true,
+        "**/Thumbs.db":true,
+        "**/.svn":true,
+        "**/.vscode":true,
+        ".gitignore":true
+    },
+    "search.exclude": {
+        "**/.git": true,
+        ".github": true,
+        ".scripts": true,
+        "**/test_hidden.py": true,
+        "**/.DS_Store": true,
+        "**/.hg": true,
+        "**/Thumbs.db":true,
+        "**/.svn":true,
+        "**/.vscode":true,
+        ".gitignore":true
+    }
+}
